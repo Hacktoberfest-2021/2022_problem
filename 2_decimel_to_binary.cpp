@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int a[10], n, i;
+    cout << "Enter the number to convert: " << endl;
+    cin >> n;
+    for (i = 0; n > 0; i++)
+    {
+        a[i] = n % 2; ///  1 1 0 1
+        // cout << a[i] << " ";
+        n = n / 2;
+    }
+    cout << "Binary of the given number= ";
+    for (i = i - 1; i >= 0; i--)
+    {
+        cout << a[i];
+    }
+
+    return 0;
+}
